@@ -1,0 +1,337 @@
+// {
+//   // 是否允许自定义的snippet片段提示
+//   "editor.snippetSuggestions": "top",
+//   "editor.fontSize": 16,
+//   "editor.fontWeight": "400",
+//   "editor.formatOnType": true,
+//   "guides.enabled": false,
+//   "editor.tabSize": 2,
+//   // 配置文件关联，以便启用对应的提示
+//   "files.associations": {
+//     "*.vue": "vue",
+//     "*.wxss": "css",
+//     "*.cjson": "jsonc",
+//     "*.wxs": "javascript"
+//   },
+//   // 配置emmet是否启用tab展开缩写
+//   "emmet.triggerExpansionOnTab": true,
+//   // 配置emmet对文件类型的支持
+//   "emmet.syntaxProfiles": {
+//     "javascript": "jsx",
+//     "vue": "html",
+//     "vue-html": "html"
+//   },
+//   // 是否开启eslint检测
+//   "eslint.enable": true,
+//   // 文件保存时是否根据eslint进行格式化
+//   "eslint.autoFixOnSave": true,
+//   // eslint配置文件
+//   "eslint.options": {
+//     "extensions": [
+//       ".js",
+//       ".vue"
+//     ]
+//   },
+//   // eslint能够识别的文件后缀类型
+//   // "eslint.validate": [
+//   //   "javascript",
+//   //   "javascriptreact",
+//   //   {
+//   //     "language": "vue",
+//   //     "autoFix": true
+//   //   },
+//   //   {
+//   //     "language": "html",
+//   //     "autoFix": true
+//   //   },
+//   // ],
+//   "eslint.validate": [
+//     "javascript",
+//     "javascriptreact",
+//     "vue"
+//   ],
+//   "search.exclude": {
+//     "**/node_modules": true,
+//     "**/bower_components": true,
+//     "**/dist": true
+//   },
+//   // 格式化快捷键（默认）：Shift+Alt+F
+//   // #每次保存的时候将代码按eslint格式进行修复
+//   "prettier.eslintIntegration": true,
+//   "terminal.integrated.rendererType": "dom",
+//   "diffEditor.renderSideBySide": false,
+//   // vscode默认启用了根据文件类型自动设置tabsize的选项
+//   "editor.detectIndentation": false,
+//   // #每次保存的时候自动格式化
+//   "editor.formatOnSave": false,
+//   //  #去掉代码结尾的分号
+//   "prettier.semi": false,
+//   //  #使用单引号替代双引号
+//   // "prettier.singleQuote": true,
+//   //  #让函数(名)和后面的括号之间加个空格
+//   "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+//   // #这个按用户自身习惯选择
+//   "vetur.format.defaultFormatter.html": "js-beautify-html",
+//   // #让vue中的js按编辑器自带的ts格式进行格式化
+//   "vetur.format.defaultFormatter.js": "vscode-typescript",
+//   "vetur.format.defaultFormatterOptions": {
+//     "js-beautify-html": {
+//       "wrap_attributes": "force-aligned"
+//       // #vue组件中html代码格式化样式
+//     }
+//   },
+//   // 格式化stylus, 需安装Manta's Stylus Supremacy插件
+//   "stylusSupremacy.insertColons": false, // 是否插入冒号
+//   "stylusSupremacy.insertSemicolons": false, // 是否插入分好
+//   "stylusSupremacy.insertBraces": false, // 是否插入大括号
+//   "stylusSupremacy.insertNewLineAroundImports": false, // import之后是否换行
+//   "stylusSupremacy.insertNewLineAroundBlocks": false,
+//   "editor.codeActionsOnSave": {
+//     "source.fixAll.eslint": true
+//   },
+//   "window.zoomLevel": 0,
+//   "emmet.includeLanguages": {
+//     "wxml": "html"
+//   },
+//   "minapp-vscode.disableAutoConfig": true,
+//   "eslint.codeAction.showDocumentation": {
+//     "enable": true
+//   },
+//   "[javascript]": {
+//     "editor.defaultFormatter": "HookyQR.beautify"
+//   },
+//   "files.autoSave": "off",
+//   "[vue]": {
+//     "editor.defaultFormatter": "esbenp.prettier-vscode"
+//   },
+//   "[typescript]": {
+//     "editor.defaultFormatter": "vscode.typescript-language-features"
+//   },
+//   "vetur.grammar.customBlocks": {
+
+//     "docs": "md",
+//     "i18n": "json"
+//   },
+//   // "eslint.nodePath": "",
+//   // "[json]": {
+//   //   "editor.defaultFormatter": "HookyQR.beautify"
+//   // }, // 两个选择器中是否换行
+
+//   // "editor.renderWhitespace": "boundary", // 在边界处渲染空格
+
+//   // "files.autoSave": "afterDelay", // 延迟自动保存文档
+
+//   // "editor.rulers": [
+
+//   // 120
+
+//   // ], // 在120个字符处显示一条竖线（可以限制每一行只能写120个字符）
+
+//   // "search.exclude": {
+//   // "**/node_modules": true,
+
+//   // "**/bower_components": true,
+
+//   // "**/target": true,
+
+//   // "**/logs": true,
+
+//   // }, // 在使用搜索功能时，将这些文件夹/文件排除在外
+
+//   // "files.exclude": {
+//   // "**/.git": true,
+
+//   // "**/.svn": true,
+
+//   // "**/.hg": true,
+
+//   // "**/CVS": true,
+
+//   // "**/.DS_Store": true,
+
+//   // "**/*.js": {
+//   // "when": "$(basename).ts" // ts编译后生成的js文件将不会显示在工作空间中
+
+//   // },
+
+//   // "**/node_modules": true
+//   // },
+//   // "[vue]": {
+//   //   "editor.defaultFormatter": "octref.vetur"
+//   // },
+//   // "workbench.editorAssociations": [
+
+//   // ] // 这些文件将不会显示在工作空间中
+// }
+
+{
+  "workbench.colorTheme": "One Monokai",
+
+  "editor.fontSize": 14,
+
+  "workbench.editor.enablePreview": true, //预览模式关闭
+
+  "editor.formatOnSave": true, // #每次保存的时候自动格式化 // 自动修复
+
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+
+  "prettier.eslintIntegration": true, //  #让prettier使用eslint的代码格式进行校验
+
+  "eslint.enable": true, //是否开启vscode的eslint // 配置 ESLint 检查的文件类型
+
+  "eslint.validate": ["javascript", "vue", "html", "javascriptreact"],
+
+  "eslint.options": {
+    "extensions": [".js", ".vue", ".ts", ".tsx", "json"] //指定vscode的eslint所处理的文件的后缀
+  },
+  "editor.renderWhitespace": "all",
+  "files.associations": {
+    "*.wpy": "vue",
+
+    "*.wxml": "wxml",
+
+    "*.cjson": "jsonc",
+
+    "*.wxss": "css",
+
+    "*.wxs": "javascript",
+
+    "*.html": "html"
+  },
+
+  "emmet.includeLanguages": {
+    "wxml": "html"
+  },
+
+  "minapp-vscode.disableAutoConfig": true,
+
+  "editor.detectIndentation": false, // vscode默认启用了根据文件类型自动设置tabsize的选项
+
+  "editor.tabSize": 2, // 重新设定tabsize
+
+  "prettier.semi": true, //  #去掉代码结尾的分号
+
+  "prettier.singleQuote": true, //  #使用单引号替代双引号
+
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true, //  #让函数(名)和后面的括号之间加个空格
+
+  "vetur.format.defaultFormatter.js": "vscode-typescript", // #让vue中的js按编辑器自带的ts格式进行格式化
+
+  "git.enableSmartCommit": true,
+
+  "editor.quickSuggestions": {
+    "strings": true
+  }, //一定要在vutur.defaultFormatterOptions参数中设置，单独修改prettier扩展的设置是无法解决这个问题的，因为perttier默认忽略了vue文件（事实上从忽略列表移除vue也不能解决这个问题）
+
+  "vetur.format.defaultFormatterOptions": {
+    "prettier": {
+      "semi": true, // 格式化不加分号
+
+      "singleQuote": true // 格式化以单引号为主
+    },
+
+    "js-beautify-html": {
+      // force-aligned | force-expand-multiline
+
+      "wrap_attributes": "force-aligned"
+    },
+
+    "prettyhtml": {
+      "printWidth": 100,
+
+      "singleQuote": false,
+
+      "wrapAttributes": false,
+
+      "sortAttributes": true
+    }
+  }, // 插件KoroFileHeader // 文件头部注释-快捷键crtl+alt+i（window）,ctrl+cmd+t (mac)
+
+  "fileheader.customMade": {
+    "Descripttion": "", //"version": "",
+
+    "Author": "voanit",
+
+    "Date": "Do not edit",
+
+    "LastEditors": "voanit",
+
+    "LastEditTime": "Do not Edit"
+  }, //函数注释-快捷键ctrl+alt+t (window), ctrl+alt+t(mac)
+
+  "fileheader.cursorMode": {
+    "name": "", // "test": "test font", // "msg": "",
+
+    "param": "",
+
+    "return": ""
+  }, //安装live Server插件
+
+  "liveServer.settings.donotVerifyTags": true,
+
+  "liveServer.settings.donotShowInfoMsg": true,
+
+  "liveServer.settings.NoBrowser": true,
+
+  "liveServer.settings.CustomBrowser": "chrome", //设置默认打开的浏览器
+
+  "liveServer.settings.host": "127.0.0.1",
+
+  "liveServer.settings.port": 5000, //设置本地服务的端口号
+
+  "liveServer.settings.root": "/distserver",
+
+  "[vue]": {
+    "editor.defaultFormatter": "octref.vetur"
+  },
+
+  "javascript.updateImportsOnFileMove.enabled": "never",
+
+  "javascript.implicitProjectConfig.experimentalDecorators": true,
+
+  "workbench.editor.showTabs": true,
+
+  "terminal.integrated.rendererType": "dom",
+
+  "sync.gist": "396472a5bb443e3680d5a0e2ffccefe8",
+
+  "window.zoomLevel": 0,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "editor.renderControlCharacters": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+
+  "launch": {},
+
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "json.schemas": [
+    {
+      "fileMatch": ["/myfile"],
+
+      "url": "schemaURL"
+    }
+  ],
+  "extends": ["prettier-now"],
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.tsdk": "",
+  "tslint.exclude": null,
+  "movets.filesToScan": [
+    ""
+    "**/*.ts",
+    "**/*.tsx"
+  ]
+}
